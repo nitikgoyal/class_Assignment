@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head><title>Sports Complex</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+</head>
+<body>
+<section class="w3-container w3-center w3-content">
+<div class="header">
+  <h2 class="w3-wide">Sports Complex</h2>
+</div></section>
+<div class="topnav">
+  <a href="#home">Home</a>
+  <a href="#facilities">Facilites</a>
+  <a href="#testimonial">Testimonial</a>
+  <a href="#contact">Contact Us</a>
+</div>
+<section id="home">
+
+<div class="aa">
+
+  <img class="mySlides" src="c8315b798db58d7af480e1ae18c4475f.jpg" style="width:100%">
+  <img class="mySlides" src="workou1.jpg" style="width:100%">
+  <img class="mySlides" src="139522.jpg" style="width:100%">
+  </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3500); // Change image every 2 seconds
+}
+</script></div></div>
+</section>
+<section id="facilities">
+<div class="row">
+	<h3 style="text-align:center; font-family:verdana; text-decoration:underline;">  Indoor Facilites </h3>
+		<div class="image">  <img src="download.jpg" width="600" height="600"></img>
+			<div class="textt"><p>Badminton</p></div></div>
+		<div class="image"> <img src="tabletennis.jpg" width="600" height="600" ></img>
+			<div class="textt"><p>Table Tennis</p></div></div>
+		<div class="image"><img src="snooker.jpg" width="600" height="600"></img>
+			<div class="textt"><p>Snooker</p></div></div>
+		<div class="image"> <img src="chess.jpg" width="600" height="600" ></img>
+			<div class="textt"><p>Chess</p></div></div>
+</div>
+<div class="row">
+	<h3 style="text-align:center; font-family:verdana; text-decoration:underline;">  Outdoor Facilites </h3>
+		<div class="image">  <img src="bsketball.jpg" width="600" height="600"></img>
+			<div class="textt"><p>BasketBall</p></div></div>
+		<div class="image"> <img src="tennis.jpg" width="600" height="600" ></img>
+				<div class="textt"><p>Tennis</p></div></div>
+		<div class="image"><img src="cricket.jpg" width="600" height="600"></img>
+			<div class="textt"><p>Cricket</p></div></div>
+		<div class="image"> <img src="vv.jpg" width="600" height="600" ></img>
+			<div class="textt"><p>VolleyBall</p></div></div>
+</div>
+</section>
+<section id="testimonial">
+<h1 style="color:black;font-size:500%; text-align:center;">Testimonial</h1>
+
+<br>
+<p style="color:black;font-size:160%;text-align:center;font-family:Comic Sans MS;">WHAT OUR CUSTOMERS ARE SAYING</p>
+<div class="container">
+  <img src="testigirl.jpg"  style="width:90px">
+  <p><span>Veronica</span> CEO at Mighty Schools.</p>
+  <p>This is the best complex i have ever gone</p>
+</div>
+
+<div class="container">
+  <img src="boypic.jpg" style="width:90px">
+  <p><span >Alex Standal</span> Sports Athlete</p>
+  <p>The coach are very good and hardworking</p>
+</div>
+</section>
+<section id="contact">
+<h1 style="color:black;font-size:400%; text-align:center; font-family:paltino">Contact Us</h1>
+<div class="cont">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</section>
+</body>
